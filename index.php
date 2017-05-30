@@ -60,7 +60,7 @@
 
 
 <footer>
-	<p>Todos los Derechos reservados 2016.</p>
+	<p>Todos los.</p>
 </footer>
 </body>
 </html>
