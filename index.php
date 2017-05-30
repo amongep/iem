@@ -60,11 +60,12 @@
 
 
 <footer>
-	<p>Todos los.</p>
+	<p>Todos los Derechos reservados 2016.</p>
 </footer>
 </body>
 </html>
 
+<p>Modificando en modo test</p>
 
 
 <script>
