@@ -57,8 +57,6 @@
 	?>
 </div>
 
-
-
 <footer>
 	<p>Todos los Derechos reservados 2016.</p>
 </footer>
