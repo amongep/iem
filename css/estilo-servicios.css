@@ -1,0 +1,294 @@
+.Cont_servicios{
+	background-color: white;
+	width: 100%;
+	height: auto;
+	padding: 30px;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 150px;
+	box-sizing: border-box;
+	display: block;
+}
+.Nosotros{
+	width: 50%;
+	color: #333333;
+	float: right;
+	text-align: justify;
+	margin-right: 10%;
+	position: relative;
+	margin-right: -700px;
+	opacity: 0;
+	-webkit-transition: margin-right 1s, opacity 3s;
+	-o-transition: margin-right 1s, opacity 3s;
+	transition: margin-right 1s, opacity 3s;
+}
+.Nosotros_anim{
+	opacity: 1;
+	margin-right: 0px;
+}
+
+.Nosotros h2{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+.img_nos{
+	width: 300px;
+	height: 300px;
+	margin-left: -500px;
+	display: inline-block;
+	background-color: black;
+	box-shadow:  0px 0px 20px rgba(0,0,0,.5);
+	opacity: 0;
+	-webkit-transition: margin-left 1s, opacity 3s;
+	-o-transition: margin-left 1s, opacity 3s;
+	transition: margin-left 1s, opacity 3s;
+}
+
+.img_mov{
+	margin-left: 0px;
+	opacity: 1;
+}
+.img_nos img{
+	width: 100%;
+}
+
+@media screen and (max-width: 840px){
+	.img_nos{
+		display: block;
+		margin: auto;
+		opacity: 1;
+	}
+	.Nosotros{
+		float: none;
+		margin: 30px auto;
+		width: 90%;
+		opacity: 1;
+		margin-right: 0px;
+	}
+}
+
+.HiddeTechWeb{
+	display: none;
+}
+.btnModalTechWeb{
+	display: inline-block;
+	padding: 10px;
+	background-color: #46B070;
+	color: white;
+	cursor: pointer;
+	box-shadow: 4px 4px 10px rgba(0,0,0,.5);
+	margin-top: 30px;
+	font-weight: bolder;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btnModalTechWeb:hover{
+	border-radius: 10px;
+	box-shadow: 4px 4px 15px rgba(0,0,0,1);
+}
+.CloseModal{
+	display: inline-block;
+	color: #737272; 
+	cursor: pointer;
+	float: right;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	margin-top: -50px;
+	margin-right: -15px;
+	padding: 10px;
+}
+.CloseModal:hover{
+	color: #434343; 
+}
+
+.Modal-TechWebTB{
+	position: fixed;
+	top: -100%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	-webkit-transition: top .5s;
+	-o-transition: top .5s;
+	transition: top .5s;
+}
+
+#InputModalTechWebTB:checked ~ .Modal-TechWebTB{
+	top: 0%;
+}
+
+/***************/
+/**Top to Left**/
+/***************/
+
+.Modal-TechWebTLBR{
+	position: fixed;
+	top: -100%;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	z-index: 10000;
+	overflow: auto;
+}
+
+#InputModalTechWebTLBR:checked ~ .Modal-TechWebTLBR{
+	top: 0%;
+	left: 0%;
+}
+/******************************/
+
+
+.SobreEmpresa{
+	max-width: 600px;
+	background-color: white;
+	margin: 80px auto;
+	padding: 10px 30px;
+	padding-bottom: 30px;
+	color: #434343;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+	box-sizing: border-box;
+	line-height: 30px;
+}
+.tit_sobreEmpresa{
+	text-align: center;
+	color: #F2A73D;
+}
+
+.Servicios{
+	width: 100%;
+	min-height: 420px;
+	margin-top: 50px;
+	text-align: center;
+	padding-top: 50px;
+	position: relative;
+}
+
+.titulos{
+	font-size: 2.2em;
+	margin: 20px;
+	margin-bottom: 30px;
+	color: #EDB800
+}
+.serv{
+	display: inline-block;
+	width: 250px;
+	height: 250px;
+	margin: 10px;
+	padding: 20px;
+	position: relative;
+	border: 1px solid rgba(255,255,255,.1);
+	overflow: hidden;
+}
+.serv:hover{
+	border: 1px solid rgba(255,255,255,.3);
+	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.4);
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.serv :after{
+	content: '';
+	position: absolute;
+	top: 80%;
+	left: -100%;
+	width: 150%;
+	height: 30px;
+	background-color: rgba(255,255,255,.05);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.serv:hover :after{
+	top: 0%;	
+	left: 65%;	
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.serv p{
+	text-align: justify;
+	padding: 10px;
+	color: #C6C6C6;
+	line-height: 25px;
+}
+.serv h3{
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 600px){
+	.serv{
+		width: 80%;
+	}
+}
+ 
+/*****ICONOS****/
+.i_class{
+	font-size: 0em;
+	color: #EDB800;
+	opacity: 0;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+.i_anim{
+	opacity: 1;
+	font-size: 5em;
+}
+
+/*****ICONOS****/
+
+.imgFix{
+	background: url(../img/backg_iem.jpg);
+	background-attachment: fixed;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: -10;
+}
+
+.cover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.4);
+	z-index: -9;
+	top: 0px;
+	left: 0px;
+}
+
+.historia{
+	max-width: 1000px;
+	width: 90%;
+	padding: 40px;	
+	color: #333333;
+	margin:auto;
+	margin-top: 350px;	
+	text-align: justify;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.2);
+	opacity: 0;
+	-webkit-transition: all .8s;
+	-o-transition: all .8s;
+	transition: all .8s;
+}
+.historia_anim{
+	opacity: 1;
+	margin-top: 50px;
+}
+.historia h2{
+	margin-bottom: 30px;
+}

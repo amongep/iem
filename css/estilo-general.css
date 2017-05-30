@@ -1,0 +1,18 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+.ocultar{
+	display: none;
+}
+
+.Cont_Contenido{
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+}
+
+.titulosh2{
+	color: #3D3D3D;
+}

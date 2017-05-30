@@ -1,0 +1,38 @@
+.contenedorPersonal{
+	text-align: center;
+	margin-top: -88px;
+	position:relative;
+	padding-bottom: 75px;
+}
+.contenedorPersonal > p{
+	margin: 5px 0px;
+	color: white;
+}
+
+.titulosh2Perso{
+	color: #EA7C05;
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom: 40px;
+}
+.ImgBackPersonal{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: url(../img/backg_iem2.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+	z-index: -10;
+}
+
+.cover2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	z-index: -9;
+	top: 0px;
+	left: 0px;
+}
