@@ -65,7 +65,6 @@
 </body>
 </html>
 
-<p>Modificando en modo test</p>
 
 
 <script>
