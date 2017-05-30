@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Inicio</title>
 
-	
 	<link rel="stylesheet" href="css/estilo-foot.css">
 	<link rel="stylesheet" href="css/estilo-general.css">
 	<link rel="stylesheet" href="css/nav.css">
@@ -16,7 +15,6 @@
 	<meta name="format-detection" content="telephone=no">
 
 	<link rel="shortcut icon" href="img/logoiem35.png" type="image/x-icon">
-
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/mov_sitio.js"></script>
@@ -46,7 +44,6 @@
 		</nav>
 	</header>
 
-
 <div class="Cont_Contenido" >
 	<?php 
 		include('php/00-Slider.php');
@@ -58,38 +55,25 @@
 </div>
 
 <footer>
-	<p>Todos los Derechos reservados 2016.</p>
+	<p>'Todos los Derechos reservados 2016.'</p>
 </footer>
 </body>
 </html>
 
-
-
 <script>
 
 $(function(){
-
     $('a').click(function() {
-
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         && location.hostname == this.hostname) {
-
             var $target = $(this.hash);
-
             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-
             if ($target.length) {
-
                 var targetOffset = $target.offset().top;
-
                 $('html,body').animate({scrollTop: targetOffset}, 1000);
-
                 return false;
-
             }
-
        }
-
    });
 });
 
